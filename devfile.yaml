@@ -1,0 +1,28 @@
+schemaVersion: 2.1.0
+metadata:
+  name: rust
+components:
+  - name: tools
+    container:
+      image: quay.io/devfile/universal-developer-image:ubi8-latest
+      memoryLimit: 1Gi
+      cpuLimit: 1000m
+
+commands:
+  - id: build
+    exec:
+      component: tools
+      workingDir: ${PROJECT_SOURCE}
+      commandLine: cargo build
+      group:
+        kind: build
+        isDefault: true        
+
+  - id: run
+    exec:
+      component: tools
+      workingDir: ${PROJECT_SOURCE}
+      commandLine: cargo run
+      group:
+        kind: run
+        isDefault: true        
