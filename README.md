@@ -1,5 +1,5 @@
-# HelloWorld-Rust
-A basic "Hello World" program, written in [Rust](https://www.rust-lang.org/).
+# Web-Scraper-Rust
+A basic Web Scraper program, written in [Rust](https://www.rust-lang.org/).
 
 ## Getting up and running
 To start an Eclipse Che workspace, you can simply pass this repository's URL to the Che server using the [factory url API](https://www.eclipse.org/che/docs/che-7/configuring-a-workspace-using-a-devfile/#creating-a-workspace-from-the-default-branch-of-a-git-repository_configuring-a-workspace-using-a-devfile), e.g. 
