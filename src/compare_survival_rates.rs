@@ -12,6 +12,8 @@ struct Data {
     years: HashMap<String, YearData>,
 }
 
+:qa!
+
 #[derive(Debug, Deserialize)]
 struct YearData {
     female: Vec<f64>,
