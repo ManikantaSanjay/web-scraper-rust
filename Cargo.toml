@@ -8,6 +8,13 @@ reqwest = { version = "0.11.10", features = ["blocking"] }
 scraper = "0.13.0"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
+ndarray = "0.15"
+ndarray-stats = "0.4"
+charts = "0.3.0"
 lazy_static = "1.4.0"
 tokio = { version = "1", features = ["full"] }
 futures = "0.3"
+
+[[bin]]
+name = "compare_survival_rates"
+path = "src/compare_survival_rates.rs"
